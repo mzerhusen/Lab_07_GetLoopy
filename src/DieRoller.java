@@ -8,7 +8,7 @@ public class DieRoller
         int dieTwo;
         int dieThree;
         int rollNumber=1;
-        boolean dieMatch = false;
+        boolean dieMatch;
 
         System.out.println("Roll \tDie 1 \tDie 2 \tDie 3");
         do
@@ -16,7 +16,7 @@ public class DieRoller
             dieOne= new Random().nextInt(6) + 1;
             dieTwo= new Random().nextInt(6) + 1;
             dieThree= new Random().nextInt(6) + 1;
-            System.out.printf("%1d \t%1d \t%1d \t%1d\n", rollNumber, dieOne, dieTwo, dieThree);
+            System.out.printf("%1d \t\t%1d \t\t%1d \t\t%1d\n", rollNumber, dieOne, dieTwo, dieThree);
             if (dieOne==dieTwo && dieOne==dieThree)
             {
                 dieMatch = true;

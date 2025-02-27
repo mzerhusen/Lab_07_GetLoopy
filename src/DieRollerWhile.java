@@ -28,7 +28,7 @@ public class DieRollerWhile
                 dieOne = dice.nextInt(6) + 1;
                 dieTwo = dice.nextInt(6) + 1;
                 dieThree = dice.nextInt(6) + 1;
-                dieSum = dieOne + dieTwo + dieThree
+                dieSum = dieOne + dieTwo + dieThree;
                 rollNumber++;
                 if (rollNumber < 100)
                 {

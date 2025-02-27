@@ -11,6 +11,7 @@ public class DieRollerWhile
         int dieOne;
         int dieTwo = 2;
         int dieThree = 3;
+        int dieSum;
         int rollNumber;
         String rollAgain;
         boolean validRollAgain;
@@ -21,20 +22,21 @@ public class DieRollerWhile
         {
             dieOne = 0;
             rollNumber = 0;
-            System.out.println("Roll \tDie 1 \tDie 2 \tDie 3");
+            System.out.println("Roll \tDie 1 \tDie 2 \tDie 3 \tSum");
             while (dieOne != dieTwo || dieOne != dieThree)
             {
                 dieOne = dice.nextInt(6) + 1;
                 dieTwo = dice.nextInt(6) + 1;
                 dieThree = dice.nextInt(6) + 1;
+                dieSum = dieOne + dieTwo + dieThree
                 rollNumber++;
                 if (rollNumber < 100)
                 {
-                    System.out.printf("%1d \t\t %1d \t\t %1d \t\t%1d \n", rollNumber, dieOne, dieTwo, dieThree);
+                    System.out.printf("%1d \t\t %1d \t\t %1d \t\t%1d \t\t%1d \n", rollNumber, dieOne, dieTwo, dieThree, dieSum);
                 }
                 else
                 {
-                    System.out.printf("%1d \t %1d \t\t %1d \t\t%1d \n", rollNumber, dieOne, dieTwo, dieThree);
+                    System.out.printf("%1d \t %1d \t\t %1d \t\t%1d \t\t%1d \n", rollNumber, dieOne, dieTwo, dieThree, dieSum);
                 }
             }
             do

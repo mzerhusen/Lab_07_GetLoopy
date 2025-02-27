@@ -29,9 +29,9 @@ public class DieRollerWhile
                 System.out.printf("%1d \t\t %1d \t\t %1d \t\t%1d \n", rollNumber, dieOne, dieTwo, dieThree);
                 rollNumber++;
             }
-            System.out.print("Would you like to roll again? Y/N ");
             do
             {
+                System.out.print("Would you like to roll again? Y/N ");
                 rollAgain = in.nextLine();
                 rollAgain=rollAgain.toUpperCase();
                 if (rollAgain.equals("Y") || rollAgain.equals("N"))
@@ -40,6 +40,7 @@ public class DieRollerWhile
                 }
                 else
                 {
+                    System.out.println(rollAgain + " is not a valid input, please enter Y to play again or N to quit.");
                     validRollAgain = false;
                 }
             }

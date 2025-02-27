@@ -1,13 +1,13 @@
 import java.util.Random;
 
-public class DieRoller
+public class DieRollerDoWhile
 {
     public static void main(String[] args)
     {
         int dieOne;
         int dieTwo;
         int dieThree;
-        int rollNumber=1;
+        int rollNumber = 1;
         boolean dieMatch;
 
         System.out.println("Roll \tDie 1 \tDie 2 \tDie 3");

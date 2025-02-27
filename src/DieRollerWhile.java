@@ -20,7 +20,7 @@ public class DieRollerWhile
         while(playAgain)
         {
             dieOne = 0;
-            rollNumber = 1;
+            rollNumber = 0;
             System.out.println("Roll \tDie 1 \tDie 2 \tDie 3");
             while (dieOne != dieTwo || dieOne != dieThree)
             {

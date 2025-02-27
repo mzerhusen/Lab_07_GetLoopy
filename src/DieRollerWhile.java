@@ -22,12 +22,20 @@ public class DieRollerWhile
             dieOne = 0;
             rollNumber = 1;
             System.out.println("Roll \tDie 1 \tDie 2 \tDie 3");
-            while (dieOne != dieTwo || dieOne != dieThree) {
+            while (dieOne != dieTwo || dieOne != dieThree)
+            {
                 dieOne = dice.nextInt(6) + 1;
                 dieTwo = dice.nextInt(6) + 1;
                 dieThree = dice.nextInt(6) + 1;
-                System.out.printf("%1d \t\t %1d \t\t %1d \t\t%1d \n", rollNumber, dieOne, dieTwo, dieThree);
                 rollNumber++;
+                if (rollNumber < 100)
+                {
+                    System.out.printf("%1d \t\t %1d \t\t %1d \t\t%1d \n", rollNumber, dieOne, dieTwo, dieThree);
+                }
+                else
+                {
+                    System.out.printf("%1d \t %1d \t\t %1d \t\t%1d \n", rollNumber, dieOne, dieTwo, dieThree);
+                }
             }
             do
             {
